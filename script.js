@@ -11,7 +11,10 @@ const enter = () =>{
         // number hold a number value i.e 10.
         // then we want to loop over to append the number to the html
         if(number===0){
-            console.log('enter valid number')
+            const p = document.createElement('p');
+                    p.classList.add(`numberp`)
+                    p.textContent = 'invalid';
+                    root.appendChild(p)
         }else{
             for(let i=1;i<=number;i++){
                 if(i%3===0 && i%5===0){
